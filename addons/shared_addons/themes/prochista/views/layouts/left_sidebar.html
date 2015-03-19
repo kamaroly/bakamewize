@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ theme:partial name="metadata" }}
+    </head>
+    <body>
+       {{ integration:analytics }}
+       {{ theme:partial name="header" }}
+        
+
+        <!-- top widget - only at home -->
+        {{ if { url:segments segment="1" } == '' OR  { url:segments segment="1" } == 'home' }}  
+            {{ widgets:area slug="maintop-home" }}
+        {{endif}}
+        <!-- /top widgrt -->
+
+        
+        <!--Main container-------->
+        <section id="main" class="container">
+            {{ if theme:options:show_breadcrumbs == 'yes' }}
+            {{ theme:partial name="breadcrumbs" }}
+            {{endif}}
+            {{ session:messages success="alert alert-success" notice="alert" error="alert alert-error" }}
+            <div class="row-fluid">
+                <!-- sidebar -->
+                <div class="span3" id="sidebar">
+                    {{ widgets:area slug="sidebar" }}
+                </div>
+                <!-- /sidebar -->
+                <div class="span9">
+                    {{ template:body }}
+                </div>
+            </div>  
+        </section>
+        
+        <!--Main container-------->
+        {{ theme:partial name="footer" }}
+    </body>
+</html>

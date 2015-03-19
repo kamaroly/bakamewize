@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Mar 15, 2015 at 11:21 PM
+-- Generation Time: Mar 18, 2015 at 10:18 PM
 -- Server version: 5.5.38
 -- PHP Version: 5.6.2
 
@@ -91,7 +91,7 @@ CREATE TABLE `core_users` (
 --
 
 INSERT INTO `core_users` (`id`, `email`, `password`, `salt`, `group_id`, `ip_address`, `active`, `activation_code`, `created_on`, `last_login`, `username`, `forgotten_password_code`, `remember_code`) VALUES
-(1, 'root@dmh.com', 'c3cc06f17ebb387c4dd8ac72abd32a56654f1595', '26a8d', 1, '', 1, '', 1365632022, 1365632022, 'admin', NULL, NULL);
+(1, 'admin@admin.com', '123456', '', 1, '', 1, '', 1365632022, 1365632022, 'admin', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -156,12 +156,12 @@ CREATE TABLE `default_blog_categories` (
 --
 
 INSERT INTO `default_blog_categories` (`id`, `slug`, `title`) VALUES
-(1, 'fashion', 'Fashion'),
-(2, 'design', 'Design'),
-(3, 'beauty', 'Beauty'),
-(4, 'model', 'Model'),
-(5, 'style', 'Style'),
-(6, 'games', 'Games');
+(1, 'waruziko', 'Waruziko'),
+(2, 'servisi', 'Servisi'),
+(3, 'sakwe-sakwe', 'Sakwe Sakwe'),
+(4, 'uyumunsi', 'Uyumunsi'),
+(5, 'horoscope', 'Horoscope'),
+(6, 'umuco', 'Umuco');
 
 -- --------------------------------------------------------
 
@@ -570,7 +570,8 @@ INSERT INTO `default_ci_sessions` (`session_id`, `ip_address`, `user_agent`, `la
 ('0df5dd253bd3e812cbfbdd5a5ec5ae00', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31', 1367826665, ''),
 ('dfba3739ec6e30d46db54891cdbb668a', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31', 1367830380, 'a:6:{s:8:"username";s:5:"admin";s:5:"email";s:12:"root@dmh.com";s:2:"id";s:1:"1";s:7:"user_id";s:1:"1";s:8:"group_id";s:1:"1";s:5:"group";s:5:"admin";}'),
 ('117da23b4552574ced397087b53e872e', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31', 1367830030, ''),
-('061b0be53cb9aee53cddac6bf92dd3a5', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36', 1426453906, '');
+('32bb70f17e5eff91dcc17445ba35b9d7', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36', 1426454720, ''),
+('cdeb8dc2789d7ca6740080d6f2029c6b', '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36', 1426709535, 'a:7:{s:14:"admin_redirect";s:5:"admin";s:8:"username";s:5:"admin";s:5:"email";s:15:"admin@admin.com";s:2:"id";s:1:"1";s:7:"user_id";s:1:"1";s:8:"group_id";s:1:"1";s:5:"group";s:5:"admin";}');
 
 -- --------------------------------------------------------
 
@@ -1384,14 +1385,15 @@ CREATE TABLE `default_profiles` (
   `postcode` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `website` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `updated_on` int(11) unsigned DEFAULT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `default_profiles`
 --
 
 INSERT INTO `default_profiles` (`id`, `created`, `updated`, `created_by`, `ordering_count`, `user_id`, `display_name`, `first_name`, `last_name`, `company`, `lang`, `bio`, `dob`, `gender`, `phone`, `mobile`, `address_line1`, `address_line2`, `address_line3`, `postcode`, `website`, `updated_on`) VALUES
-(1, NULL, NULL, NULL, NULL, 1, 'admin admin', 'admin', 'admin', '', 'en', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(1, NULL, NULL, NULL, NULL, 1, 'admin admin', 'admin', 'admin', '', 'en', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, '2015-03-18 21:30:28', NULL, 1, 1, 2, 'Kamaro', 'Lambert', 'Kamaro', NULL, 'en', NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1608,14 +1610,15 @@ CREATE TABLE `default_users` (
   `username` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `forgotten_password_code` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
   `remember_code` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Registered User Information';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Registered User Information';
 
 --
 -- Dumping data for table `default_users`
 --
 
 INSERT INTO `default_users` (`id`, `email`, `password`, `salt`, `group_id`, `ip_address`, `active`, `activation_code`, `created_on`, `last_login`, `username`, `forgotten_password_code`, `remember_code`) VALUES
-(1, 'root@dmh.com', 'c3cc06f17ebb387c4dd8ac72abd32a56654f1595', '26a8d', 1, '', 1, '', 1365632022, 1426446065, 'admin', NULL, 'bbd280dcae551b7a015fe2dba9e092ce26fb29d6');
+(1, 'admin@admin.com', 'c3cc06f17ebb387c4dd8ac72abd32a56654f1595', '26a8d', 1, '', 1, '', 1365632022, 1426706942, 'admin', '0', 'bbd280dcae551b7a015fe2dba9e092ce26fb29d6'),
+(2, 'kamaroly@gmail.com', 'd7dd0557acab6b2b4eef9059e8a008a51d2c92e5', '065b5f', 1, '::1', 1, NULL, 1426707028, 1426707028, 'kamaroly', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -2102,7 +2105,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 -- AUTO_INCREMENT for table `default_profiles`
 --
 ALTER TABLE `default_profiles`
-MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id` int(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `default_redirects`
 --
@@ -2122,7 +2125,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=27;
 -- AUTO_INCREMENT for table `default_users`
 --
 ALTER TABLE `default_users`
-MODIFY `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `default_variables`
 --

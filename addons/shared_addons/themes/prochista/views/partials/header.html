@@ -1,0 +1,91 @@
+<!--Header-->
+
+
+<header id="header">
+            
+            <!-- top bar-->
+            <div id="topbar">
+                <div class="container">
+                    <ul id="topmenu">
+                        {{ navigation:links group="top" }}
+                    </ul>
+                    <div id="usermenu">
+                    {{ if user:logged_in }}
+                        <div class="btn-group">
+                            <a class="btn dropdown-toggle  btn-success" data-toggle="dropdown" href="#">
+                                
+                                {{ helper:gravatar email=user:email size="20" }}&nbsp;&nbsp;{{ user:display_name }}
+                                &nbsp;&nbsp;
+                              <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {{ if settings:enable_profiles }}
+                                <li>
+                                    <a href="{{ url:site uri='edit-profile' }}">{{ helper:lang line="edit_profile_label" }}</a>
+                                </li>
+                                {{ endif }}
+                                
+                                {{ if user:has_cp_permissions }}
+                                <li>
+                                    <a href="{{ url:site uri='admin' }}" target="_blank">{{ helper:lang line="global:control-panel" }}</a>
+                                </li>
+                                {{ endif }}
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="{{ url:site uri='users/logout' }}">{{ helper:lang line="logout_label" }}</a>
+                                </li>
+                                
+                            </ul>
+                          </div>
+                    {{else}}
+                    <a id ="login-register" class="btn btn-success" href="#" data-placement="bottom" data-title="Click to login" rel='tooltip'>
+                        <i class="icon-user"></i>&nbsp;&nbsp;
+                        {{helper:lang line="user:login_btn"}}
+                    </a>
+                    
+                    {{endif}}
+                    </div>
+                </div>
+            </div>
+            
+            {{ if !user:logged_in }}
+                {{ theme:partial name="login-register" }}         
+            {{endif}}
+            
+            
+            <!--main head-->
+            <div id="main-header">
+                <div class="container">
+
+                    <div class="row-fluid" id="headercontainer">
+                        <div class="span4 mid" id="logocontainer">
+                            <a href="{{ url:site  }}" title="Home">
+                            BAKAME WIZE
+                            </a>
+                        </div>
+
+                        <div class="span8 mid ml">
+                            {{widgets:area slug="header"}}
+                        </div>
+
+                    </div>
+                    <div class="row-fluid top-menu">
+                        <ul id="nav" class="nav-full">
+                            {{ navigation:links group="header" }}
+                        </ul>
+                        <div class="search-form-container pull-right hidden-phone span3">
+                            <form action="/search/results" method="post" accept-charset="utf-8" class="search-form" parse_params="1">
+
+                                <input type="search" name="q" placeholder="Search terms..."> 
+                                <button id="search-submit" class="icon-search search-btn" type="submit" name="Search"></button>
+                            
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </header>
+        
+
+<!--/Header-->

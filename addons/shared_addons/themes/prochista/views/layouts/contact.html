@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ theme:partial name="metadata" }}
+    </head>
+    <body>
+       {{ integration:analytics }}
+       {{ theme:partial name="header" }}
+
+        <!--Main container-------->
+        <section id="main" class="container">
+            <section id="contact-map" class="row-fluid">
+                 {{widgets:area slug="map"}}
+            </section>
+            <section class="row-fluid">
+                {{ session:messages success="alert alert-success" notice="alert" error="alert alert-error" }}
+                {{ template:body }}
+            </section>      
+
+            
+        </section>
+        <!--Main container-------->
+        {{ theme:partial name="footer" }}
+    </body>
+</html>

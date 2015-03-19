@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ theme:partial name="metadata" }}
+    </head>
+    <body>
+       {{ integration:analytics }}
+       {{ theme:partial name="header" }}
+       
+       
+        <!-- top widget - only at home -->
+        {{ if { url:segments segment="1" } == '' OR  { url:segments segment="1" } == 'home' }}  
+            {{ widgets:area slug="maintop-home" }}
+        {{endif}}
+        <!-- /top widgrt -->
+        
+
+        <!--Main container-->
+        <section id="main" class="container">
+            {{ if { url:segments segment="1" } != '' AND  { url:segments segment="1" } != 'home' }}  
+                {{ if theme:options:show_breadcrumbs == 'yes' }}
+                     {{ theme:partial name="breadcrumbs" }}
+                {{endif}}
+            {{endif}}
+            {{ session:messages success="alert alert-success" notice="alert" error="alert alert-error" }}
+             <!--option layout: {{theme:options:layout}}-->
+            {{ if theme:options:layout == 'full-width' }}
+                {{ template:body }}
+            {{endif}}
+             <!--option layout: {{theme:options:layout}}-->
+            {{ if theme:options:layout == 'sidebar-right' }}
+                <div class="row-fluid">
+                    <div class="span9">
+                        {{ template:body }}
+                    </div>
+                    <!-- sidebar -->
+                    <div class="span3" id="sidebar">
+                        {{ widgets:area slug="sidebar" }}
+                    </div>
+                    <!-- /sidebar -->
+                </div>
+            {{endif}}
+            <!--option layout: {{theme:options:layout}}-->
+            {{ if theme:options:layout == 'sidebar-left' }}
+                <div class="row-fluid">
+                    <!-- sidebar -->
+                    <div class="span3" id="sidebar">
+                        {{ widgets:area slug="sidebar" }}
+                    </div>
+                    <!-- /sidebar -->
+
+                    <div class="span9">
+                        {{ template:body }}
+                    </div>
+                </div>
+            {{endif}}
+        </section>
+        
+        <!--Main container-->
+        {{ theme:partial name="footer" }}
+    </body>
+</html>

@@ -1,0 +1,12 @@
+<ul class="breadcrumb"> 
+    <li><span>You are here:</span></li>
+{{ template:breadcrumbs }}
+    <li>
+    {{ if uri }}
+            {{ url:anchor segments=uri title=name }}<span class="divider">></span> 
+    {{ else }}
+            <span class="active">{{ name }}</span>
+    {{ endif }}
+    </li>
+{{ /template:breadcrumbs }}
+</ul>

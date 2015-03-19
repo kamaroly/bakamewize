@@ -1,0 +1,633 @@
+/*Service icons-----------------*/
+.the-icons li {
+    float: left;
+    width: 19%;
+    height:35px;
+    line-height: 25px;
+    padding: 0;
+    line-height: 0;
+    margin-bottom: 5px;
+}
+.the-big-icons li {
+    float: left;
+    width: 190px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.the-icons,.the-big-icons {
+    margin:0;
+}
+.the-icons i {
+    font-size: 20px;
+}
+.the-icons li {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    padding: 3px;
+}
+.the-icons li:hover i {
+    font-size: 30px;
+}
+.the-icons li:hover{
+    background-color: #eaeaea;
+}
+/* icons
+==============================================*/
+.color-icons i{
+}
+.large-icons {
+    font-size: 16px;
+    line-height:2;
+}
+.large-icons li{
+    padding:10px;
+}
+.large-icons i{
+    font-size: 16px;
+}
+/* big icons
+====================================*/
+[class^="bicon-"],
+[class*="bicon-"] {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    *margin-right: .3em;
+    line-height: 48px;
+    vertical-align: text-top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bicon-arrow{
+    background-image: url("../img/icons/big/arrow.png");
+}
+.bicon-blocked{
+    background-image: url("../img/icons/big/blocked.png");
+}
+.bicon-Briefcase{
+    background-image: url("../img/icons/big/Briefcase.png");
+}
+.bicon-Broadcast{
+    background-image: url("../img/icons/big/Broadcast.png");
+}
+.bicon-Bulb{
+    background-image: url("../img/icons/big/Bulb.png");
+}
+.bicon-Cart{
+    background-image: url("../img/icons/big/Cart.png");
+}
+.bicon-Cell{
+    background-image: url("../img/icons/big/Cell.png");
+}
+.bicon-Chart{
+    background-image: url("../img/icons/big/Chart.png");
+}
+.bicon-Circle{
+    background-image: url("../img/icons/big/Circle.png");
+}
+.bicon-Circle-2{
+    background-image: url("../img/icons/big/Circle-2.png");
+}
+.bicon-Clock{
+    background-image: url("../img/icons/big/Clock.png");
+}
+.bicon-Closed{
+    background-image: url("../img/icons/big/Closed.png");
+}
+.bicon-Control-Panel{
+    background-image: url("../img/icons/big/Control-Panel.png");
+}
+.bicon-currency{
+    background-image: url("../img/icons/big/currency.png");
+}
+.bicon-File{
+    background-image: url("../img/icons/big/File.png");
+}
+.bicon-Floppy{
+    background-image: url("../img/icons/big/Floppy.png");
+}
+.bicon-Folder{
+    background-image: url("../img/icons/big/Folder.png");
+}
+.bicon-Forward{
+    background-image: url("../img/icons/big/Forward.png");
+}
+.bicon-Globe{
+    background-image: url("../img/icons/big/Globe.png");
+}
+.bicon-Home{
+    background-image: url("../img/icons/big/Home.png");
+}
+.bicon-info{
+    background-image: url("../img/icons/big/info.png");
+}
+.bicon-info-2{
+    background-image: url("../img/icons/big/info-2.png");
+}
+.bicon-Key{
+    background-image: url("../img/icons/big/Key.png");
+}
+.bicon-Letter-Closed{
+    background-image: url("../img/icons/big/Letter-Closed.png");
+}
+.bicon-Letter-Open{
+    background-image: url("../img/icons/big/Letter-Open.png");
+}
+.bicon-List{
+    background-image: url("../img/icons/big/List.png");
+}
+.bicon-Lock{
+    background-image: url("../img/icons/big/Lock.png");
+}
+.bicon-Machine{
+    background-image: url("../img/icons/big/Machine.png");
+}
+.bicon-Massage{
+    background-image: url("../img/icons/big/Massage.png");
+}
+.bicon-Network{
+    background-image: url("../img/icons/big/Network.png");
+}
+.bicon-Pause{
+    background-image: url("../img/icons/big/Pause.png");
+}
+.bicon-Picture{
+    background-image: url("../img/icons/big/Picture.png");
+}
+.bicon-Play{
+    background-image: url("../img/icons/big/Play.png");
+}
+.bicon-Power{
+    background-image: url("../img/icons/big/Power.png");
+}
+.bicon-Recycle{
+    background-image: url("../img/icons/big/Recycle.png");
+}
+.bicon-Recycle-Closed{
+    background-image: url("../img/icons/big/Recycle-Closed.png");
+}
+.bicon-Recycle-Open{
+    background-image: url("../img/icons/big/Recycle-Open.png");
+}
+.bicon-Reverse{
+    background-image: url("../img/icons/big/Reverse.png");
+}
+.bicon-RSS{
+    background-image: url("../img/icons/big/RSS.png");
+}
+.bicon-Scince{
+    background-image: url("../img/icons/big/Scince.png");
+}
+.bicon-Search{
+    background-image: url("../img/icons/big/Search.png");
+}
+.bicon-Sign-Down{
+    background-image: url("../img/icons/big/Sign-Down.png");
+}
+.bicon-Sign-up{
+    background-image: url("../img/icons/big/Sign-up.png");
+}
+.bicon-Stock{
+    background-image: url("../img/icons/big/Stock.png");
+}
+.bicon-Track-back{
+    background-image: url("../img/icons/big/Track-back.png");
+}
+.bicon-Track-Forward{
+    background-image: url("../img/icons/big/Track-Forward.png");
+}
+.bicon-TV{
+    background-image: url("../img/icons/big/TV.png");
+}
+.bicon-Un-Lock{
+    background-image: url("../img/icons/big/Un-Lock.png");
+}
+.bicon-Wire-less{
+    background-image: url("../img/icons/big/Wire-less.png");
+}
+.bicon-Work{
+    background-image: url("../img/icons/big/Work.png");
+}
+/*	Social Networks Icons */
+
+/* --------------------------------------------------------	*/
+
+ 
+
+.social-network
+{
+	display:inline-block;
+	background: url(../img/icons/social.png) no-repeat top left;
+	width: 33px;
+	height: 33px;
+	margin: 3px 10px 12px 0px;
+	background-position-y: -42px;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+	cursor:pointer;
+}
+#footer .social-network { margin: 3px 13px 12px 0px; }
+/* default */
+
+.social-network.behance { background-position: 0 -42px }
+.social-network.blogger { background-position: -42px -42px }
+.social-network.deviantart { background-position: -84px -42px }
+.social-network.digg { background-position: -126px -42px }
+.social-network.dribbble { background-position: -168px -42px }
+.social-network.facebook { background-position: -210px -42px }
+.social-network.feed { background-position: -252px -42px }
+.social-network.flickr { background-position: -294px -42px }
+.social-network.forrst { background-position: -336px -42px }
+.social-network.gplus { background-position: -378px -42px }
+.social-network.gowalla { background-position: -420px -42px }
+.social-network.lastfm { background-position: -462px -42px }
+.social-network.linkedin { background-position: -504px -42px }
+.social-network.myspace { background-position: -546px -42px }
+.social-network.paypal { background-position: -588px -42px }
+.social-network.picasa { background-position: -630px -42px }
+.social-network.pinterest { background-position: -672px -42px }
+.social-network.sharethis { background-position: -714px -42px }
+.social-network.skype { background-position: -756px -42px }
+.social-network.stumbleupon { background-position: -798px -42px }
+.social-network.tumblr { background-position: -840px -42px }
+.social-network.twitter { background-position: -882px -42px }
+.social-network.viddlr { background-position: -924px -42px }
+.social-network.vimeo { background-position: -966px -42px }
+.social-network.wordpress { background-position: -1008px -42px }
+.social-network.youtube { background-position: -1050px -42px }
+/* mouseover */
+
+.social-network.behance:hover, .active .social-network.behance { background-position: 0 0 }
+.social-network.blogger:hover, .active .social-network.blogger { background-position: -42px 0 }
+.social-network.deviantart:hover, .active .social-network.deviantart { background-position: -84px 0 }
+.social-network.digg:hover, .active .social-network.digg { background-position: -126px 0 }
+.social-network.dribbble:hover, .active .social-network.dribbble { background-position: -168px 0 }
+.social-network.facebook:hover, .active .social-network.facebook { background-position: -210px 0 }
+.social-network.feed:hover, .active .social-network.feed { background-position: -252px 0 }
+.social-network.flickr:hover, .active .social-network.flickr { background-position: -294px 0 }
+.social-network.forrst:hover, .active .social-network.forrst { background-position: -336px 0 }
+.social-network.gplus:hover, .active .social-network.gplus { background-position: -378px 0 }
+.social-network.gowalla:hover, .active .social-network.gowalla { background-position: -420px 0 }
+.social-network.lastfm:hover, .active .social-network.lastfm { background-position: -462px 0 }
+.social-network.linkedin:hover, .active .social-network.linkedin { background-position: -504px 0 }
+.social-network.myspace:hover, .active .social-network.myspace { background-position: -546px 0 }
+.social-network.paypal:hover, .active .social-network.paypal { background-position: -588px 0 }
+.social-network.picasa:hover, .active .social-network.picasa { background-position: -630px 0 }
+.social-network.pinterest:hover, .active .social-network.pinterest { background-position: -672px 0 }
+.social-network.sharethis:hover, .active .social-network.sharethis { background-position: -714px 0 }
+.social-network.skype:hover, .active .social-network.skype { background-position: -756px 0 }
+.social-network.stumbleupon:hover, .active .social-network.stumbleupon { background-position: -798px 0 }
+.social-network.tumblr:hover, .active .social-network.tumblr { background-position: -840px 0 }
+.social-network.twitter:hover, .active .social-network.twitter { background-position: -882px 0 }
+.social-network.viddlr:hover, .active .social-network.viddlr { background-position: -924px 0 }
+.social-network.vimeo:hover, .active .social-network.vimeo { background-position: -966px 0 }
+.social-network.wordpress:hover, .active .social-network.wordpress { background-position: -1008px 0 }
+.social-network.youtube:hover, .active .social-network.youtube { background-position: -1050px 0 }
+.s-i li
+{
+	list-style:none;
+	padding:0px 14px;
+	float:left;
+}
+
+/*Shortcodes-----------------------------------------*/
+/*Accordion----------------*/
+
+.accordion-wrapper {
+	margin-top: -15px;
+}
+.accordion-wrapper .accordion-head {
+        font-weight: bold;
+        border-top: 1px dotted #cccac8;
+}
+.accordion-wrapper .accordion-head.active,
+.accordion-wrapper .accordion-head.last	{
+
+}
+.accordion-wrapper .accordion-head:first-child {
+        margin-top: 0;
+        border-top: none;
+}
+.accordion-wrapper .accordion-head a {
+        display:block;
+        color:#333;
+        text-decoration:none;
+        padding:15px 0;
+        outline: none;
+}
+.accordion-wrapper .accordion-head a:before {
+        content:"+";
+        display:inline-block;
+        position:relative;
+        margin-right: 12px;
+        width:12px;
+        overflow:hidden;
+        text-align:center;
+        font-size:18px;
+        vertical-align:text-bottom;
+        background: #282828;
+        width: 18px;
+        height: 18px;
+        text-indent: -1px;
+        line-height: 18px;
+        color: #fff;
+        font-weight: normal;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        vertical-align: top;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+}
+.accordion-wrapper .accordion-head.active a:before {
+        content:"–";
+}
+
+.accordion-body {
+        margin-bottom: 20px;
+}
+
+.the-icons li {
+    float: left;
+    width: 19%;
+    height:35px;
+    line-height: 25px;
+    padding: 0;
+    line-height: 0;
+    margin-bottom: 5px;
+}
+.the-big-icons li {
+    float: left;
+    width: 190px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.the-icons,.the-big-icons {
+    margin:0;
+}
+.the-icons i {
+    font-size: 20px;
+}
+.the-icons li {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    padding: 3px;
+}
+.the-icons li:hover i {
+    font-size: 30px;
+}
+.the-icons li:hover{
+    background-color: #eaeaea;
+}
+/* icons
+==============================================*/
+.color-icons i{
+}
+.large-icons {
+    font-size: 16px;
+    line-height:2;
+}
+.large-icons li{
+    padding:10px;
+}
+.large-icons i{
+    font-size: 16px;
+}
+/* big icons
+====================================*/
+[class^="bicon-"],
+[class*="bicon-"] {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    *margin-right: .3em;
+    line-height: 48px;
+    vertical-align: text-top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bicon-arrow{
+    background-image: url("../img/icons/big/arrow.png");
+}
+.bicon-blocked{
+    background-image: url("../img/icons/big/blocked.png");
+}
+.bicon-Briefcase{
+    background-image: url("../img/icons/big/Briefcase.png");
+}
+.bicon-Broadcast{
+    background-image: url("../img/icons/big/Broadcast.png");
+}
+.bicon-Bulb{
+    background-image: url("../img/icons/big/Bulb.png");
+}
+.bicon-Cart{
+    background-image: url("../img/icons/big/Cart.png");
+}
+.bicon-Cell{
+    background-image: url("../img/icons/big/Cell.png");
+}
+.bicon-Chart{
+    background-image: url("../img/icons/big/Chart.png");
+}
+.bicon-Circle{
+    background-image: url("../img/icons/big/Circle.png");
+}
+.bicon-Circle-2{
+    background-image: url("../img/icons/big/Circle-2.png");
+}
+.bicon-Clock{
+    background-image: url("../img/icons/big/Clock.png");
+}
+.bicon-Closed{
+    background-image: url("../img/icons/big/Closed.png");
+}
+.bicon-Control-Panel{
+    background-image: url("../img/icons/big/Control-Panel.png");
+}
+.bicon-currency{
+    background-image: url("../img/icons/big/currency.png");
+}
+.bicon-File{
+    background-image: url("../img/icons/big/File.png");
+}
+.bicon-Floppy{
+    background-image: url("../img/icons/big/Floppy.png");
+}
+.bicon-Folder{
+    background-image: url("../img/icons/big/Folder.png");
+}
+.bicon-Forward{
+    background-image: url("../img/icons/big/Forward.png");
+}
+.bicon-Globe{
+    background-image: url("../img/icons/big/Globe.png");
+}
+.bicon-Home{
+    background-image: url("../img/icons/big/Home.png");
+}
+.bicon-info{
+    background-image: url("../img/icons/big/info.png");
+}
+.bicon-info-2{
+    background-image: url("../img/icons/big/info-2.png");
+}
+.bicon-Key{
+    background-image: url("../img/icons/big/Key.png");
+}
+.bicon-Letter-Closed{
+    background-image: url("../img/icons/big/Letter-Closed.png");
+}
+.bicon-Letter-Open{
+    background-image: url("../img/icons/big/Letter-Open.png");
+}
+.bicon-List{
+    background-image: url("../img/icons/big/List.png");
+}
+.bicon-Lock{
+    background-image: url("../img/icons/big/Lock.png");
+}
+.bicon-Machine{
+    background-image: url("../img/icons/big/Machine.png");
+}
+.bicon-Massage{
+    background-image: url("../img/icons/big/Massage.png");
+}
+.bicon-Network{
+    background-image: url("../img/icons/big/Network.png");
+}
+.bicon-Pause{
+    background-image: url("../img/icons/big/Pause.png");
+}
+.bicon-Picture{
+    background-image: url("../img/icons/big/Picture.png");
+}
+.bicon-Play{
+    background-image: url("../img/icons/big/Play.png");
+}
+.bicon-Power{
+    background-image: url("../img/icons/big/Power.png");
+}
+.bicon-Recycle{
+    background-image: url("../img/icons/big/Recycle.png");
+}
+.bicon-Recycle-Closed{
+    background-image: url("../img/icons/big/Recycle-Closed.png");
+}
+.bicon-Recycle-Open{
+    background-image: url("../img/icons/big/Recycle-Open.png");
+}
+.bicon-Reverse{
+    background-image: url("../img/icons/big/Reverse.png");
+}
+.bicon-RSS{
+    background-image: url("../img/icons/big/RSS.png");
+}
+.bicon-Scince{
+    background-image: url("../img/icons/big/Scince.png");
+}
+.bicon-Search{
+    background-image: url("../img/icons/big/Search.png");
+}
+.bicon-Sign-Down{
+    background-image: url("../img/icons/big/Sign-Down.png");
+}
+.bicon-Sign-up{
+    background-image: url("../img/icons/big/Sign-up.png");
+}
+.bicon-Stock{
+    background-image: url("../img/icons/big/Stock.png");
+}
+.bicon-Track-back{
+    background-image: url("../img/icons/big/Track-back.png");
+}
+.bicon-Track-Forward{
+    background-image: url("../img/icons/big/Track-Forward.png");
+}
+.bicon-TV{
+    background-image: url("../img/icons/big/TV.png");
+}
+.bicon-Un-Lock{
+    background-image: url("../img/icons/big/Un-Lock.png");
+}
+.bicon-Wire-less{
+    background-image: url("../img/icons/big/Wire-less.png");
+}
+.bicon-Work{
+    background-image: url("../img/icons/big/Work.png");
+}
+
+
+
+/* alert
+==============================================*/
+.alert{
+    border-radius: 0;
+}
+::selection{
+}
+.hero-unit{
+    border-radius: 0;
+}
+
+
+/* drop-caps
+==============================================*/
+.drop-cap{   
+    display: inline-block;
+    float: left;
+    font-size: 27px;
+    font-weight:bolder;
+    width: 35px;
+    height: 50px;
+    line-height: 50px;
+    margin-right:5px;
+    text-align: center;
+}
+.drop-cap.gray{
+    background: #ccc;
+}
+.drop-cap.color{
+    color: #222;
+}
+/* blockquotes
+==============================================*/
+blockquote.color{
+    color: black;
+}
+blockquote.pull-right.color{
+    border-left:none;
+}
+/* list styles
+==============================================*/
+ul.list li{
+    list-style: disc;
+}
+ul.list li ul li{
+    list-style: circle;
+}
+ol li{
+    list-style: decimal;
+}
+/* highlights
+==============================================*/
+.highlight{
+}
+.highlight.gray{
+    background-color: #999;
+}
+.highlight.black{
+    background-color: #000;
+    color:#fff;
+}
